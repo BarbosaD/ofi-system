@@ -1,0 +1,76 @@
+/* Estilo gerais da página */
+body{
+    background-color: #6c7272;
+    font-weight: bold;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 13px; 
+}
+
+/* Estilo destinado a área da caixa de login */
+.boxlogin {
+    width: 350px;
+    height: 370px;
+    margin: auto;
+    margin-top: 12.5%;
+    background-color: #fff;
+    border-radius: 8px;
+    text-align: center;
+}
+
+#logo_login{
+    padding-top: 15px;
+    width: 80%;
+    height: 20%;
+}
+
+
+/*Estilo destinado a área formulário */
+input{
+    display: block;
+    margin-left: 20px;
+    width: 85%;
+    height: 50%;
+    opacity: 50%;
+    margin-top: 4px;
+}
+
+label{
+    margin-right: 76.8%;
+    margin-top: 50%;
+
+}
+
+.field{
+    margin-top: 14px;
+    height: 60px;
+}
+
+button{
+    margin-top: 10%;
+    height: 80%;
+    width: 60%;
+    padding: 3%;
+    display: inline-block;
+    font-size: 15px;
+    font-weight: bold;
+    border-radius: 5px;
+    border: 0.7px solid black;
+    box-shadow: 15px;
+    background-color: #1650f5;
+    color:#fff;
+    cursor: pointer;
+
+}
+
+button:hover {
+    background-color: #1140c2;
+}
+
+.password{ 
+    color:#6c7272;
+}
+
+.password:hover{
+    color:#1650f5;
+}
+
