@@ -37,19 +37,19 @@
 
   <!-- Área de navegação -->
     <div class="nav"> 
-        <a href="./home.html">
+        <a href="./home.php">
         <div class="nav-list">
             <img class="icon"src="./imgs/arrow-left-black.png" title="Menu Inicial"/>
         </div>
         </a>
         
-        <a href="./ticket.html">
+        <a href="./ticket.php">
         <div class="nav-list">
             <img class="icon" src="./imgs/os.png" title="Ordens de Serviços"/>
         </div>
         </a>
         
-        <a href="./contact.html">
+        <a href="./contact.php">
         <div class="nav-list">
             <img class="icon" src="./imgs/contact.png" title="Contatos"/>
         </div>

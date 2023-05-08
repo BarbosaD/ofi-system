@@ -31,15 +31,15 @@
 
         <div class="list">
 
-            <li><a href="./ticket.html"><button>
+            <li><a href="./ticket.php"><button>
                 <img class='icons' src="./imgs/os.png"/>ORDENS DE SERVIÇOS</button></a></li>
 
 
-            <li><a href="./parts.html">  <button>
+            <li><a href="./parts.php">  <button>
                 <img class='icons' src="./imgs/cot.png"/>COTAÇÃO DE PEÇAS</button>
                 </a></li>
 
-            <li ><a href="./contact.html"><button id = 'contact'>
+            <li ><a href="./contact.php"><button id = 'contact'>
                 <img class='icons' src="./imgs/contact.png"/>CONTATOS</button></a></li>
         </div>    
 
