@@ -1,7 +1,25 @@
 /* Estilo geral da página */
 body{
     background-color: #6c7272;
+    height: 100vh;
+    margin: 0;
 }
+
+.footer{
+    background-color: #262323;
+    width: 100%;
+    height: 4%;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    bottom: 0;
+    align-items: center;
+    color: #fff;
+    box-shadow: 0px -1px 6px 0px rgb(26 22 22);
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 0.8rem;
+}
+
 
 
 /* ESTILIZAÇÃO DO DROPDOWN AO CLICAR NO NOME DO USUÁRIO LOGADO */
@@ -15,7 +33,7 @@ body{
     font-size: 15px;
     position: relative;
     right: 6.6%;
-    top: 52px;
+    top: 58px;
     border-radius: 5px;
     color: #000;
     box-shadow: 1px 1px 7px rgb(9, 5, 234);
@@ -71,6 +89,7 @@ body{
     box-shadow: 1px 1px 7px rgb(9, 5, 234);
     font-weight: bolder;
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-top: 5px;
 }
 
 
@@ -87,7 +106,7 @@ body{
     margin:auto;
     width: 30%;
     height: 60%;
-    margin-top:8%;
+    margin-top:6%;
     border-radius: 10px;
     display: flex;
     box-shadow: 10px 10px 18px 0px rgba(0,0,0,0.75);
@@ -103,15 +122,15 @@ body{
 }
 
 button{
-    height: 35px;
-    width: 350px;
+    height: 40px;
+    width: 450px;
     align-items: center;
     border: 1px solid blue;
     border-radius: 5px;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     font-weight: bold;
     cursor: pointer;
-    font-size: 15px;
+    font-size: 18px;
     display: flex;
     justify-content: space-between;
     padding-right: 25%;
@@ -128,9 +147,10 @@ button:hover{
 }
 
 .list{
-    margin-top: 6%;
+    margin-top: 13%;
     list-style-type: none;
     padding-bottom: 12%;
+    
 }
 
 li {
