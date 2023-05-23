@@ -6,12 +6,10 @@
 
     
         
-  <!-- Título da página  -->
-    <div class="title">
-    <h1 >
-    Cotação de peças
-    </h1>
-    </div>
+<?php
+        $title_page = "Cotação de Peças";
+        include 'title.php';
+?>
     
   <!-- Área de visualização dos contatos e container de navegação  --> 
     <div class="center">

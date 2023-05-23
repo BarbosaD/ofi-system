@@ -61,8 +61,22 @@ body{
 
 .header{
     display: flex;
-    justify-content: end;
+    justify-content: space-between;
     color: #fff;
+    height: 60px;
+    background: linear-gradient(90deg, rgba(255,255,255,1) 0%, #1650f5 30%, #1650f5 100%);
+    box-shadow: 1px 0px 7px #0905ea;
+}
+
+#logo-ofi{
+    height: 90%;
+}
+
+.container-logo{
+    height: 100%;
+    display: flex;
+    align-items: center;
+    margin-left: 15px;
 }
 
 /* ESTILIZAÇÃO DA DIV QUE APRESENTA O USUARIO LOGADO */
@@ -75,21 +89,21 @@ body{
     padding-left: 1%;
 }
 
-#info{
+#session{
     display: flex;
     justify-content: center;
     margin-right: 2%;
     align-items: center;
     width: 7%;
     border-radius: 5px;
-    border: 1px solid rgb(61, 61, 236);
     padding: 3px;
     background-color: #fff;
     color: #000;
-    box-shadow: 1px 1px 7px rgb(9, 5, 234);
     font-weight: bolder;
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    margin-top: 5px;
+    position: absolute;
+    right: -5px;
+    top: 5px;
 }
 
 
@@ -166,3 +180,5 @@ li {
 #contact{
     padding-right: 35%;
 }
+
+

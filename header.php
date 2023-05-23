@@ -14,7 +14,10 @@
     <!-- Cabeçalho da página, onde apresenta o usuário logado -->
     <header>
             <div class="header">
-                <div id="info">
+                <div class="container-logo">
+                    <img src="./imgs/ofi.png" id="logo-ofi" alt="Logo Cabeçalho"/>
+                </div>
+                <div id="session">
                     <img id="avatar" src="./imgs/avatar.png"/>
                     <span id="user"> Kairos </span>
                     <img id="arrow" src="./imgs/down-arrow.png"/>

@@ -1,16 +1,16 @@
 <?php
         $css = "./css/styleTicket.css" ;
-        $title = 'Ordens de Serviços';
+        $title = "Ordens de Serviços";
         include 'header.php' ;
 ?>
 
         
- <!-- Título da página  -->
-<div class="title">
-<h1 >
-    Ordens de Serviços 
-</h1>
-</div>
+
+<?php
+$title_page = "Ordens de serviços";
+include 'title.php';
+?>
+
 
  <!-- Área de visualização dos tickets e container de navegação  --> 
 <div class="center">

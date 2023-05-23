@@ -5,12 +5,11 @@
 ?>
 
         
- <!-- Título da página  -->
-    <div class="title">
-    <h1 >
-    Contatos 
-    </h1>
-    </div>
+<?php
+        $title_page = "Contatos";
+        include 'title.php';
+?>
+
     
    <!-- Área de visualização dos contatos e container de navegação  --> 
     <div class="center">
