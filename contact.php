@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -9,28 +10,20 @@
     <link rel="stylesheet" href="css/styleContact.css">
 </head>
 <body>
+=======
+<?php
+        $css = "./css/styleContact.css" ;
+        $title = 'Contatos';
+        include 'header.php' ;
+?>
+>>>>>>> 01e0efd2825443d4cb5c7124f724755e6686894b
 
-<!-- Cabeçalho da página, onde apresenta o usuário logado -->
-  <header>
-    <div class="header">
-        <div id="info">
-            <img id="avatar" src="./imgs/avatar.png"/>
-            <span id="user"> Kairos </span>
-            <img id="arrow" src="./imgs/down-arrow.png"/>
-        </div>
-        <div id="dropdown">
-            <span class="dp-list"> Sair </span>
-        </div>
-    </div>
-  </header>
-    
         
- <!-- Título da página  -->
-    <div class="title">
-    <h1 >
-    Contatos 
-    </h1>
-    </div>
+<?php
+        $title_page = "Contatos";
+        include 'title.php';
+?>
+
     
    <!-- Área de visualização dos contatos e container de navegação  --> 
     <div class="center">
@@ -116,6 +109,7 @@
  <!-- FUNDO MODAL ESCURO ENQUANTO ESTIVER ABERTO -->
  <div id='modal-background'> </div> 
 
+<<<<<<< HEAD
 
 <script src="./script/scriptContact.js"></script>
 </body>
@@ -125,3 +119,9 @@
 //session_start();
 
 ?>
+=======
+ <?php
+        $script="./script/scriptContact.js";
+        include 'footer.php';
+    ?>
+>>>>>>> 01e0efd2825443d4cb5c7124f724755e6686894b
