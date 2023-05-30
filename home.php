@@ -1,17 +1,9 @@
 
-    <!-- Cabeçalho da página, onde apresenta o usuário logado -->
-    <header>
-            <div class="header">
-                <div id="info">
-                    <img id="avatar" src="./imgs/avatar.png"/>
-                    <span id="user"> Kairos </span>
-                    <img id="arrow" src="./imgs/down-arrow.png"/>
-                </div>
-                <div id="dropdown">
-                    <span class="dp-list"> Sair </span>
-                </div>
-            </div>
-    </header>
+    <?php
+        $css = "./css/styleHome.css" ;
+        $title = 'Home';
+        include 'header.php' ;
+    ?>
 
     <!-- Área central da página, onde apresenta a logo e as opções do sistema -->
     <div class="center">
@@ -33,6 +25,9 @@
         </div>    
     </div>
 
-<script src="./script/scriptHome.js"></script>    
-</body>
-</html>
+    <?php
+        $script="./script/scriptHome.js";
+        include 'footer.php';
+    ?>
+
+    <script src="./script/scriptHome.js"></script>     
