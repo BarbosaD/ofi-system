@@ -4,7 +4,7 @@
             <div class="header">
                 <div id="info">
                     <img id="avatar" src="./imgs/avatar.png"/>
-                    <span id="user"> Kaidscdsros </span>
+                    <span id="user"> Kairos </span>
                     <img id="arrow" src="./imgs/down-arrow.png"/>
                 </div>
                 <div id="dropdown">
