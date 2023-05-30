@@ -15,11 +15,12 @@
             <div class="header">
                 <div id="info">
                     <img id="avatar" src="./imgs/avatar.png"/>
-                    <span id="user"> Kaidscdsros </span>
+                    <span id="user"> Kairos </span>
                     <img id="arrow" src="./imgs/down-arrow.png"/>
                 </div>
                 <div id="dropdown">
-                    <span class="dp-list"> Sair </span>
+                    <a href="logout.php"> Sair </a>
+                    <!--span class="dp-list"> Sair </span-->
                 </div>
             </div>
     </header>
@@ -49,3 +50,5 @@
 <script src="./script/scriptHome.js"></script>    
 </body>
 </html>
+
+
