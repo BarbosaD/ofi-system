@@ -8,8 +8,6 @@
     <!-- Área central da página, onde apresenta a logo e as opções do sistema -->
     <div class="center">
         <img id="logo" src="./imgs/Logo Ofi.png"/>
-
-
         <div class="list">
             <li><a href="./ticket.php">
                 <button>
