@@ -26,7 +26,7 @@ include 'title.php';
 
     <a href="./parts.php">
     <div class="nav-list">
-        <img class="icon"src="./imgs/cot.png" title="Contação de Peças"/>
+        <img class="icon"src="./imgs/cot.png" title="Cotação de Peças"/>
     </div>
     </a>
 
@@ -46,7 +46,7 @@ include 'title.php';
                         <img src="./imgs/lupa.png" id="lupa" alt="Buscar"/>
                     </div>
                     <div id="new-ticket">
-                        <img src="./imgs/more.png" id="more" alt="Buscar" title="Criar ticket"/>
+                        <img src="./imgs/more.png" class="more" alt="Buscar" title="Criar ticket"/>
                     </div>
             </div>
             <div class="table-style">
@@ -78,13 +78,16 @@ include 'title.php';
     </div>
 </div>   
 
-<!-- MODAL -->
+<!-- MODAL ADICIONAR TICKET -->
 <div id="modal" class="modal">
     <div class="modal-content">
-      <span class="close"><img  id='x-close' src="./imgs/x.png" /></span>
+      <div class="title-modal">
+          <h4> Adicionar Nova Ordem de Serviço </h4>
+      </div>
+        <img  id='x-close' class='close' src="./imgs/x.png" />
       <form>
-        <label for="number-ticket">Número do Ticket:</label>
-        <input type="text" id="number-ticket" name="number-ticket"><br>
+        <label for="id"></label>
+        <input type="hidden" id="id" ID><br>
   
         <label for="contact">Contato:</label>
         <input type="text" id="contact" name="contact"><br>

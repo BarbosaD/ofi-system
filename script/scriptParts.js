@@ -31,18 +31,18 @@ form.addEventListener("submit", (event) => {
   event.preventDefault();
 
   // Pega os valores dos campos do formulário
-  const idPart = document.getElementById("id").value;
+  // const idPart = document.getElementById("id").value;
   const namePart = document.getElementById("name").value;
   const amount = document.getElementById("amount").value;
   
   // Cria uma nova linha na tabela com os valores preenchidos
   const table = document.getElementById("table").getElementsByTagName("tbody")[0];
   const newRow = table.insertRow(-1);
-  const cellIdPart = newRow.insertCell(0);
-  const cellNamePart = newRow.insertCell(1);
-  const cellAmount = newRow.insertCell(2);
+  // const cellIdPart = newRow.insertCell(0);
+  const cellNamePart = newRow.insertCell(0);
+  const cellAmount = newRow.insertCell(1);
   
-  cellIdPart.innerHTML = idPart;
+  // cellIdPart.innerHTML = idPart;
   cellNamePart.innerHTML = namePart;
   cellAmount.innerHTML = amount;
 
@@ -86,3 +86,4 @@ document.addEventListener('click', function(event) {
     }
     
 });
+

@@ -40,23 +40,28 @@
     <div class="container">
             <div class="header_container"> 
                     <div id="new-ticket">
-                        <img src="./imgs/more.png" id="more" alt="Buscar" title="Adicionar Peça"/>
+                        <img src="./imgs/more.png" class="more" alt="Buscar" title="Adicionar Peça"/>
+                    </div>
+                    <div class="export-pdf"> 
+                      <img src="./imgs/pdf.png" class='icon-action' alt="Buscar" title="Exportar PDF"/>
+                        <span class='title-button-export' > Exportar </span>
+                    </div>
+                    <div class="btn-print"> 
+                      <img src="./imgs/printer.png" class='icon-action' alt="Buscar" title="Exportar PDF"/>
+                        <span class='title-button-export' > Imprimir </span>
                     </div>
             </div>
             <div class="table-style">
                 <table id="table">
                     <thead>
                       <tr>
-                        <th>ID</th>
                         <th>NOME PEÇA</th>
                         <th>QUANTIDADE</th>
-                        
                       </tr>
                     </thead>
                     <tbody>
                       <tr>
-                        <td>001</td>
-                        <td>Gabriel</td>
+                        <td>BENGALA DIREITA</td>
                         <td>1</td>                     
                       </tr>
                     </tbody>
@@ -65,20 +70,19 @@
     </div>
     </div>   
  
-    <!-- JANELA MODAL -->
+    <!-- JANELA MODAL - ADICIONAR PEÇA -->
     <div id="modal" class="modal">
       <div class="modal-content">
-        <span class="close"><img  id='x-close' src="./imgs/x.png" /></span>
+        <div class="title-modal">
+        <h4>Adicionar peça na cotação</h4>
+        </div>
+        <img  id="x-close" class='close' src="./imgs/x.png" />
         <form>
-          <label for="id">ID:</label>
-          <input type="text" id="id" id="id"><br>
+          <!-- <label for="id">ID:</label> -->
+          <input type="hidden" id="id" id="id"><br>
     
           <label for="name">Nome da peça:</label>
-          <select id="name" name="name">
-              <option >Seta Esquerda</option>
-              <option >Bloco do Farol</option>
-              <option >Manete Freio</option>
-          </select><br>
+          <input type="text" id="name" name="name"><br>
 
           <label for="amount">Quantidade:</label>
           <input type="number" id="amount" name="amount"><br>

@@ -118,6 +118,7 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
+    border-radius: 15px;
 }
 
 .nav-list:hover{
@@ -142,9 +143,8 @@ body{
     margin-top: 12%;
     position: relative;
     right: 7%;
-    border-radius: 2px;
-    border: 1px solid #1140c2;
-    box-shadow: 1.5px 1.5px 2px 0px rgba(0,0,0,0.75);
+    border-radius: 15px;
+    box-shadow: 0px 0px 4px 1px rgb(22 50 233 / 75%);
 }
 
 .icon{
@@ -236,14 +236,13 @@ h1{
 
 #new-ticket{
     width: 3%;
-    height: 100%;
     align-items: center;
     display: flex;
     position: absolute;
     cursor: pointer;
 }
 
-#more{
+.more{
     width: 35%;
     margin: auto;
     background-color: #1140c2;
@@ -252,9 +251,9 @@ h1{
     
 }
 
-.new-ticket:hover #more{
+.more:hover{
     background-color: #0f2e85;
-    transition: 0.3s;
+    transition: 0.1s;
 }
 
 .table-style{
@@ -270,6 +269,11 @@ table {
   td {
     padding: 10px; 
     text-align: left; 
+    font-size: 1.5em;
+  }
+
+  td{
+    font-size: 1.3em;
   }
 
   tr:nth-child(even) {
@@ -303,32 +307,37 @@ table {
     align-items: center;
     padding: 10px;
     border-radius: 10px;
-    border: 1px solid blue;
-    box-shadow: 1px 1px 7px rgb(9, 5, 234);
+    box-shadow: 0px 0px 4px rgb(9, 5, 234);
     padding: 10px;
+    width: 400px;
+    height: 210px;
   }
 
 form{
     display: flex;
     flex-direction: column;
-    text-align: center;
-    margin-top: 6%;
+    text-align: left;
+    width: 100%;
+    position: relative;
+    bottom: 20px;
 }
 
 #save{
-    margin-top: 10%;
     height: 2em;
-    width: 100%;
-    padding: 3%;
+    width: 50%;
     display: inline-block;
     font-size: 15px;
-    font-weight: bold;
+    /* font-weight: bold; */
     border-radius: 5px;
-    border: 0.7px solid black;
     box-shadow: 15px;
     background-color: #1650f5;
     color:#fff;
     cursor: pointer;
+    position: relative;
+    left: 25%;
+    border: none;
+    position: absolute;
+    bottom: -25px
 }
 
 #save:hover{
@@ -344,19 +353,43 @@ h2{
 
 label{
     font-weight: bolder;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    padding-bottom: 3px;
 }
 
 input{
     padding: 3px;
+    background-color: #d3d3d3;
+    border: none;
+    height: 20px;
+    border-radius: 5px;
+}
+
+input:focus{
+    outline: none;
+}
+
+h4{
+    bottom: -7px;
+    position: relative;
+    margin: 0px;
+    font-size: 1.1em;
+    font-family: 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
 #x-close{
-    background-color: #1140c2;
-    width: 30%;
+    background-color: #1650f5;
+    width: 4%;
     padding: 6px;
     border-radius: 15px;
-    margin-left: 20%;
     cursor: pointer;
+    position: relative;
+    left: 210px;
+    bottom: 41px;
+}
+
+#x-close:hover{
+    background-color: #1140c2;
 }
 
 /* ESTILIZAÇÃO DO FUNDO QUANDO O MODAL É EXIBIDO */
@@ -371,3 +404,48 @@ input{
     background-color: rgba(0, 0, 0, 0.5);
     z-index: 9998;
   }
+
+  .export-pdf{
+    padding: 4px;
+    position: relative;
+    left: 345px;
+    border: 1px solid red;
+    width: 115px;
+    display: flex;
+    align-items: center;
+  }
+
+  .icon-action{
+    width: 30%;
+  }
+
+  .title-button-export{
+    position: relative;
+    left: 12px;
+    font-family: monospace;
+    font-size: 1.1em;
+  }
+
+  .export-pdf:hover{
+   background-color: red;
+   color: #fff;
+   cursor: pointer;
+   transition: 0.3s;
+  }
+
+  .btn-print{
+    padding: 4px;
+    position: relative;
+    left: 365px;
+    border: 1px solid #0905ea;
+    width: 115px;
+    display: flex;
+    align-items: center;
+  }
+
+  .btn-print:hover{
+    background-color: #0905ea;
+    color: #fff;
+    cursor: pointer;
+    transition: 0.3s;
+   }

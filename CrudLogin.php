@@ -35,7 +35,7 @@ class CrudLogin {
     public function ObterUser($id) {
         $sql = "SELECT * FROM login WHERE id = :id";
         $stmt = $this->conn->prepare($sql);
-        $stmt->bindParam(":id", $id);
+        $stmt->bindParam(":id", $id,PDO::PARAM_INT);
         $stmt->execute();
         return $stmt->fetch(PDO::FETCH_ASSOC);
     }
@@ -59,6 +59,15 @@ class CrudLogin {
         $sql = "DELETE FROM login WHERE id = :id";
         $stmt = $this->conn->prepare($sql);
         $stmt->bindParam(":id", $id);
+        $stmt->execute();
+        return $stmt->rowCount();
+    }
+
+    public function ValidateUser($email, $senha){
+        $sql = "SELECT * FROM login where email = :email AND pass = :pass";
+        $stmt = $this->conn->prepare($sql);
+        $stmt->bindParam(":email",$email, PDO::PARAM_STR);
+        $stmt->bindParam(":pass",$senha, PDO::PARAM_STR);
         $stmt->execute();
         return $stmt->rowCount();
     }

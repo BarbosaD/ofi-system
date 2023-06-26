@@ -9,6 +9,7 @@ if (isset($_SESSION['username'])) {
 if ($_SERVER['REQUEST_METHOD'] === 'POST'){
     require_once 'DbConnection.php';
     require_once 'CrudLogin.php';
+    require_once 'CrudTicket.php';
 
     $email = filter_input(INPUT_POST,'email',FILTER_VALIDATE_EMAIL);;
     $password = $_POST['password'];
@@ -16,27 +17,22 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST'){
     $db = new DbConnection();
     $conn = $db->getConnection();
 
-    $teste = new CrudLogin($db);
-    $t = $teste->Read();
+    $crudConn = new CrudLogin($db);
 
     if(empty($email) || empty($senha))
     {
+        //$ticked = new CrudTicket($db);
+        //$ticketId = $ticked->createTicket("João Vitor","Teste Descrição","MVJP65V",);
+        //echo "Ticket criado com ID: " . $ticketId;
         echo 'Por favor, preencha todos os campos';
     }
     else
     {
-        //SELECT `id`, `name`, `email`, `pass` FROM `login` WHERE 1
-        $sql = "SELECT * FROM login where email = :email AND pass = :pass";
-        $result = $conn->prepare($sql);
-        $result->bindParam(":email",$email, PDO::PARAM_STR);
-        $result->bindParam(":pass",$senha, PDO::PARAM_STR);
-        $result->execute();
-
-        if ($result->rowCount() == 1 ) 
+        $login = $crudConn->ValidateUser($email, $senha);
+        if ($login == 1 ) 
         {
             $_SESSION['email'] = $email;
             header('Location: home.php');
-            exit;
         } 
         else 
         {

@@ -118,6 +118,7 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
+    border-radius: 15px;
 }
 
 .nav-list:hover{
@@ -136,15 +137,15 @@ body{
     display: flex;
     justify-content: center;
 }
+
 .nav{
     width: 7%;
     height: 300px;
     margin-top: 12%;
     position: relative;
     right: 7%;
-    border-radius: 2px;
-    border: 1px solid #1140c2;
-    box-shadow: 1.5px 1.5px 2px 0px rgba(0,0,0,0.75);
+    border-radius: 15px;
+    box-shadow: 0px 0px 4px 1px rgb(22 50 233 / 75%);
 }
 
 .icon{
@@ -241,13 +242,18 @@ h1{
     cursor: pointer;
 }
 
-#more{
+.more{
     width: 35%;
     margin: auto;
     background-color: #1140c2;
     padding: 8px;
     border-radius: 12px;
     
+}
+
+.more:hover{
+    background-color: #0f2e85;
+    transition: 0.1s;
 }
 
 .new-ticket:hover #more{
@@ -266,8 +272,9 @@ table {
 
   th,
   td {
-    padding: 10px; /* Adiciona um espaçamento interno nas células */
-    text-align: left; /* Alinha o texto à esquerda */
+    padding: 10px; 
+    text-align: left; 
+    font-size: 1.5em;
   }
 
   tr:nth-child(even) {
@@ -282,6 +289,15 @@ table {
     font-weight: bold; /* Define o estilo de fonte negrito para o cabeçalho */
   }
 
+  h4{
+    bottom: 15px;
+    position: relative;
+    margin: 0px;
+    font-size: 1.1em;
+    font-family: 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+
   #modal {
     display: none;
     position: fixed;
@@ -295,35 +311,40 @@ table {
     background-color: #ffffff;
     display: flex;
     flex-direction: column;
+    justify-content: end;
     align-items: center;
     padding: 10px;
     border-radius: 10px;
-    border: 1px solid blue;
-    box-shadow: 1px 1px 7px rgb(9, 5, 234);
+    box-shadow: 0px 0px 4px rgb(9, 5, 234);
     padding: 10px;
+    width: 400px;
+    height: 410px;
   }
 
 form{
     display: flex;
     flex-direction: column;
-    text-align: center;
-    margin-top: 6%;
+    text-align: left;
+    width: 100%;
+    position: relative;
+    bottom: 35px;
 }
 
 #save{
-    margin-top: 10%;
     height: 2em;
-    width: 100%;
-    padding: 3%;
+    width: 50%;
     display: inline-block;
     font-size: 15px;
-    font-weight: bold;
+    /* font-weight: bold; */
     border-radius: 5px;
-    border: 0.7px solid black;
     box-shadow: 15px;
     background-color: #1650f5;
     color:#fff;
     cursor: pointer;
+    position: relative;
+    left: 25%;
+    position: absolute;
+    bottom: -28px
 }
 
 #save:hover{
@@ -339,25 +360,52 @@ h2{
 
 label{
     font-weight: bolder;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    padding-bottom: 3px;
 }
 
 input{
     padding: 3px;
+    background-color: #d3d3d3;
+    border: none;
+    height: 20px;
+    border-radius: 5px;
+}
+
+input:focus{
+    outline: none;
+}
+
+h4{
+    bottom: 8px;
+    position: relative;
+    margin: 0px;
+    font-size: 1.1em;
+    font-family: 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
 #x-close{
-    background-color: #1140c2;
-    width: 30%;
+    background-color: #1650f5;
+    width: 4%;
     padding: 6px;
     border-radius: 15px;
-    margin-left: 20%;
     cursor: pointer;
+    position: relative;
+    left: 210px;
+    bottom: 60px;
 }
+
+#x-close:hover{
+    background-color: #1140c2;
+}
+
+/* ESTILIZAÇÃO DO FUNDO QUANDO O MODAL É EXIBIDO */
 
 #modal-background{
     display: none;
     position: fixed;
     top: 0;
+    left: 0;
     width: 100%;
     height: 100%;
     background-color: rgba(0, 0, 0, 0.5);

@@ -44,7 +44,7 @@
                         <img src="./imgs/lupa.png" id="lupa" alt="Buscar"/>
                     </div>
                     <div id="new-ticket">
-                        <img src="./imgs/more.png" id="more" alt="Buscar" title="Criar ticket"/>
+                        <img src="./imgs/more.png" class="more" alt="Buscar" title="Criar ticket"/>
             </div>
             </div>
             <div class="table-style">
@@ -71,18 +71,25 @@
     </div>
     </div>   
 
-<!-- MODAL -->
+<!-- MODAL ADICIONAR CONTATO -->
 <div id="modal" class="modal">
   <div class="modal-content">
-    <span class="close"><img  id='x-close' src="./imgs/x.png" /></span>
-    <form>
-      <label for="id">ID:</label>
-      <input type="text" id="id" id="id"><br>
+     <div class="title-modal">
+          <h4> Adicionar Contato </h4>
+      </div>
+      <img  id='x-close' class='close' src="./imgs/x.png" />
+
+      <form>
+      <label for="id"></label>
+      <input type="hidden" id="id" ID><br>
 
       <label for="name">Nome:</label>
-      <input type="text" id="name" name="name"><br>
+      <input type="text" id="name" name="name" ><br>
 
-      <label for="number">Número:</label>
+      <label for="number">Número (Tel):</label>
+      <input type="text" id="number" name="number"><br>
+
+      <label for="number">E-mail:</label>
       <input type="text" id="number" name="number"><br>
 
       <label for="cpf">CPF:</label>
