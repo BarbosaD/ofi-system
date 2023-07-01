@@ -2,8 +2,8 @@
 
 class DbConnection{
     private $servername = "localhost";
-    private $username = "root";
-    private $password = "123456";
+    private $username = "novousuario";
+    private $password = "senha";
     private $dbname = "bancosystem";
     private $conn;
 
