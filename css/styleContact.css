@@ -138,7 +138,7 @@ body{
     height: 300px;
     margin-top: 12%;
     position: relative;
-    right: 7%;
+    right: 30px;
     border-radius: 15px;
     box-shadow: 0px 0px 4px 1px rgb(22 50 233 / 75%);
 }
@@ -154,18 +154,19 @@ body{
     display: flex;
     text-align: center;
     align-items: center;
-    width: 25%;
+    width: 300px;
     margin: auto;
     border-radius: 8px;
     box-shadow: 1px 1px 7px rgb(9, 5, 234);
     position: relative;
-    top: 50px;
+    top: 18px;
     margin: auto;
+    right: 615px;
 }
 
 h1{
     margin: auto;
-    font-size: 2.3em;
+    font-size: 1.5em;
     color: #fff;
     padding: 8px;
 }
@@ -173,15 +174,13 @@ h1{
 /* ESTILIZAÇÃO DO CONTAINER CENTRAL */
 .container{
     background-color: rgb(255, 255, 255);
-    width: 55%;
-    height: 600px; /* FALAR PROFESSORA */
-    margin-top: 6%;
+    width: 80%;
+    height: 705px;
+    margin-top: 2%;
     border-radius: 10px;
     display: flex;
-    box-shadow: 10px 10px 18px 0px rgba(0,0,0,0.75);
     margin-right: 7%;
     flex-direction: column;
-
 }
 
 /* ESTILIZAÇÃO DO CABEÇALHO DO CONTAINER CENTRAL */
@@ -238,7 +237,7 @@ h1{
 }
 
 .more{
-    width: 35%;
+    width: 30%;
     margin: auto;
     background-color: #1140c2;
     padding: 8px;

@@ -9,7 +9,7 @@
         
 
 <?php
-$title_page = "Ordens de serviços";
+$title_page = "ORDENS DE SERVIÇOS";
 include 'title.php';
 ?>
 

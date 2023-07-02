@@ -9,7 +9,7 @@
     
         
 <?php
-        $title_page = "Cotação de Peças";
+        $title_page = "COTAÇÃO DE PEÇAS";
         include 'title.php';
 ?>
     

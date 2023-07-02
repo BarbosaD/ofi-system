@@ -8,7 +8,7 @@
 
         
 <?php
-        $title_page = "Contatos";
+        $title_page = "CONTATOS";
         include 'title.php';
 ?>
 
@@ -56,6 +56,7 @@
                         <th>ID</th>
                         <th>Nome</th>
                         <th>Telefone</th>
+                        <th>E-mail</th>
                         <th>CPF</th>
                       </tr>
                     </thead>
@@ -64,6 +65,7 @@
                         <td>001</td>
                         <td>Gabriel</td>
                         <td>99744460</td>
+                        <td>gbsilvaps@hotmail.com</td>
                         <td>01716188732</td>
                       
                       </tr>
@@ -83,7 +85,7 @@
 
       <form>
       <label for="id"></label>
-      <input type="hidden" id="id" ID><br>
+      <input type="hidden" id="id"><br>
 
       <label for="name">Nome:</label>
       <input type="text" id="name" name="name"><br>
