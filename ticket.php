@@ -55,7 +55,7 @@ include 'title.php';
                       <tr>
                         <th>Número de Ticket</th>
                         <th>Contato</th>
-                        <th>Categoria</th>
+                        <th>Descrição</th>
                         <th>Início</th>
                         <th>Status</th>
                         <th>Placa</th>
@@ -86,17 +86,17 @@ include 'title.php';
       </div>
         <img  id='x-close' class='close' src="./imgs/x.png" />
       <form>
-        <label for="id"></label>
-        <input type="hidden" id="id" ID><br>
+
+        <input type="hidden" id="id" ><br>
   
         <label for="contact">Contato:</label>
-        <input type="text" id="contact" name="contact"><br>
+        <input type="text" id="contact" name="contact" placeholder='Selecione um Contato'><br>
   
-        <label for="category">Categoria:</label>
-        <input type="text" id="category" name="category"><br>
+        <label for="category">Descrição</label>
+        <textarea type="text" id="category" name="category" > </textarea>
   
-        <label for="inicio">Início:</label>
-        <input type="date" id="inicio" name="inicio"><br>
+      
+        <input type="hidden" id="inicio" name="inicio"><br>
   
         <label for="status">Status:</label>
         <select id="status" name="status">
@@ -106,7 +106,7 @@ include 'title.php';
         </select><br>
   
         <label for="plate">Placa:</label>
-        <input type="text" id="plate" name="plate"><br>
+        <input type="text" id="plate" name="plate" placeholder='Placa de veículo'><br>
   
         <input id='save' type="submit" value="Salvar">
       </form>

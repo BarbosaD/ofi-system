@@ -84,13 +84,13 @@
       <input type="hidden" id="id" ID><br>
 
       <label for="name">Nome:</label>
-      <input type="text" id="name" name="name" ><br>
+      <input type="text" id="name" name="name"><br>
 
       <label for="number">Número (Tel):</label>
-      <input type="text" id="number" name="number"><br>
+      <input type="text" id="number" name="number" placeholder='Ex: 27997444460'><br>
 
-      <label for="number">E-mail:</label>
-      <input type="text" id="number" name="number"><br>
+      <label for="email">E-mail:</label>
+      <input type="text" id="email" name="email" placeholder='gbsilvaps@hotmail.com'> <br>
 
       <label for="cpf">CPF:</label>
       <input type="tel" id="cpf" name="cpf"><br>
