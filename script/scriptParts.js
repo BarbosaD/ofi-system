@@ -87,3 +87,58 @@ document.addEventListener('click', function(event) {
     
 });
 
+//BOTÃO COM FUNÇÃO DE EXPORTAR PDF
+  document.querySelector(".export-pdf").addEventListener("click", function() {
+    var table = document.getElementById("table");
+    var rowData = [];
+    
+    for (var i = 0; i < table.rows.length; i++) {
+      var row = table.rows[i];
+      var rowDataItem = [];
+      
+      for (var j = 0; j < row.cells.length; j++) {
+        var cellText = row.cells[j].innerText.trim();
+        if (cellText !== "") {
+          rowDataItem.push(cellText);
+        }
+      }
+      
+      if (rowDataItem.length > 0) {
+        rowData.push(rowDataItem);
+      }
+    }
+  
+    var docDefinition = {
+      content: [
+        { text: 'Cotação de Peças', style: 'header' },
+        {
+          table: {
+            widths: ['*', '*', '*'], 
+            body: [
+              ...rowData
+            ],
+          }
+        }
+      ],
+      styles: {
+        header: {
+          fontSize: 18,
+          bold: true,
+          margin: [0, 0, 0, 10]
+        }
+      },
+      pageOrientation: 'landscape' 
+    };
+
+    pdfMake.createPdf(docDefinition).download("cotacao.pdf");
+  });
+
+
+//BOTÃO COM FUNÇÃO DE IMPRIMIR
+document.querySelector(".btn-print").addEventListener("click", function() {
+  let originalContents = document.body.innerHTML;
+  document.body.innerHTML = document.getElementById("table").outerHTML;
+  window.print();
+  document.body.innerHTML = originalContents;
+});
+

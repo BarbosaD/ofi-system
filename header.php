@@ -7,6 +7,8 @@
     <link rel="shortcut icon" href="./imgs/icon.png" type="image/x-icon">
     <link rel="stylesheet" href="<?php echo $css; ?>">
     <title><?php echo $title; ?></title>
+    <?php echo $script_pdf_1 ?>
+    <?php echo $script_pdf_2 ?>
 </head>
 <body>
 

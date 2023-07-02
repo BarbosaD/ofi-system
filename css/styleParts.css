@@ -5,6 +5,13 @@ body{
     margin: 0;
 }
 
+@media print {
+    #table th, #table td {
+        border: 1px solid black;
+        color: #000
+    }
+}
+
 .footer{
     background-color: #262323;
     width: 100%;

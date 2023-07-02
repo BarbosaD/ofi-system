@@ -1,6 +1,8 @@
 <?php
         $css = "./css/styleContact.css" ;
         $title = 'Contatos';
+        $script_pdf_1 = '<script src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.2.3/pdfmake.min.js"></script>';
+        $script_pdf_2 = '<script src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.2.3/vfs_fonts.js"></script>';
         include 'header.php' ;
 ?>
 
