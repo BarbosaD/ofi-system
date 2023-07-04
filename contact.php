@@ -68,6 +68,16 @@
                         <td>99744460</td>
                         <td>gbsilvaps@hotmail.com</td>
                         <td>01716188732</td>
+                        <td>
+                          <div class="icons-action" >
+                              <div id="btn-edit" onclick='openModalEdit() '>
+                                  <img src="./imgs/edit.png" class="icon-act"/>
+                              </div>
+                              <div id="btn-delete" onclick='openModalDelete()'>
+                                  <img src="./imgs/delete.png" class="icon-act"/>
+                              </div>
+                          </div>
+                        </td>
                       </tr>
                       <tr>
                         <td>002</td>
@@ -75,6 +85,16 @@
                         <td>997432160</td>
                         <td>kairin@hotmail.com</td>
                         <td>13016188732</td>
+                        <td>
+                          <div class="icons-action">
+                              <div id="btn-edit" onclick='openModalEdit() '>
+                                  <img src="./imgs/edit.png" class="icon-act"/>
+                              </div>
+                              <div id="btn-delete" onclick='openModalDelete()'>
+                                  <img src="./imgs/delete.png" class="icon-act"/>
+                              </div>
+                          </div>
+                        </td>
                       </tr>
                       <tr>
                         <td>003</td>
@@ -82,6 +102,17 @@
                         <td>998561800</td>
                         <td>jp@hotmail.com</td>
                         <td>19082796324</td>
+                        <td>
+                          <div class="icons-action">
+                              <div id="btn-edit" onclick='openModalEdit() '>
+                                  <img src="./imgs/edit.png" class="icon-act"/>
+                              </div>
+                              <div id="btn-delete" 
+                              onclick='openModalDelete()'>
+                                  <img src="./imgs/delete.png" class="icon-act"/>
+                              </div>
+                          </div>
+                        </td>
                       </tr>
                     </tbody>
                   </table>   
@@ -112,7 +143,52 @@
 
       <label for="cpf">CPF:</label>
       <input type="text" id="cpf" name="cpf"><br>
+      
       <input id='save' type="submit" value="Salvar">
+    </form>
+  </div>
+</div>
+
+
+<!-- MODAL EXCLUIR CONTATO -->
+<div id="modal-delete" class="modal">
+  <div class="modal-content-dlt">
+  <img src="./imgs/delete-msg.png" class='icon-dlt' />
+  <span class='txt-dlt' > Tem certeza que deseja excluir o contato? </span>
+  <button id="dlt-yes">
+     Excluir
+  </button>
+  <button  onclick='closeModalDelete()' id="dlt-no">
+     Cancelar
+  </button>
+  </div>
+</div>
+
+<!-- MODAL EDITAR CONTATO -->
+<div id="modal-edit" class="modal">
+  <div class="modal-content">
+     <div class="title-modal">
+          <h4> Editar Contato </h4>
+      </div>
+      <img onclick='closeModalEdit()' id='x-close-dlt' class='close' src="./imgs/x.png" />
+
+      <form id='form'>
+      <label for="id"></label>
+      <input type="hidden" id="id" value='004'><br>
+
+      <label for="editName">Nome:</label>
+      <input type="text" id="editName" name="editName"><br>
+
+      <label for="editPhone">Número (Tel):</label>
+      <input type="text" id="editPhone" name="editPhone" placeholder='Ex: 27997444460'><br>
+
+      <label for="editEmail">E-mail:</label>
+      <input type="text" id="editEmail" name="editEmail" placeholder='gbsilvaps@hotmail.com'> <br>
+
+      <label for="editCpf">CPF:</label>
+      <input type="text" id="editCpf" name="editCpf"><br>
+      
+      <input id='save-btn' type="submit" value="Salvar">
     </form>
   </div>
 </div>

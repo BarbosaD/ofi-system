@@ -298,6 +298,117 @@ table {
     font-family: Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
+#modal-edit{
+    display: none;
+    position: fixed;
+    z-index: 9999;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  #x-close-dlt{
+    background-color: #1650f5;
+    width: 4%;
+    padding: 6px;
+    border-radius: 15px;
+    cursor: pointer;
+    position: relative;
+    left: 249px;
+    bottom: 52px;
+
+  }
+
+  #save-btn{
+    height: 2em;
+    width: 50%;
+    display: inline-block;
+    font-size: 15px;
+    /* font-weight: bold; */
+    border-radius: 5px;
+    box-shadow: 15px;
+    background-color: #1650f5;
+    color:#fff;
+    cursor: pointer;
+    position: relative;
+    left: 25%;
+    position: absolute;
+    bottom: -28px
+  }
+
+
+  #modal-delete {
+    display: none;
+    position: fixed;
+    z-index: 9999;
+    left: 50%;
+    top: 48%;
+    transform: translate(-50%, -50%);
+  }
+
+  .icon-dlt{
+        width:100px;
+        position: relative;
+        width: 93px;
+        top: -70px;
+        
+    }
+
+.txt-dlt{
+    bottom: 50px;
+    position: relative;
+    font-size: 1.5em;
+    font-weight: bold;
+    font-family: math;
+}
+  
+
+.modal-content-dlt{
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: center;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 4px rgb(223, 37, 37);
+    padding: 10px;
+    width: 480px;
+    height: 205px;
+  }
+
+#dlt-yes{
+    position: absolute;
+    left: 123px;
+    bottom: 16px;
+    background: red;
+    border: none;
+    width: 101px;
+    padding: 4px;
+    border-radius: 8px;
+    color: white;
+    font-size: 1.1em;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+
+ #dlt-no{
+    position: absolute;
+    right: 123px;
+    bottom: 16px;
+    background: #857a7a;
+    border: none;
+    width: 101px;
+    padding: 4px;
+    border-radius: 8px;
+    color: white;
+    font-size: 1.1em;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+
 
   #modal {
     display: none;
@@ -454,3 +565,16 @@ h4{
     border-radius: 8px;
     text-align: center;
   }
+
+  .icons-action{
+ display: flex;
+}
+
+.icon-act{
+ width:24px;
+ padding-left: 5px;
+}
+
+#btn-edit, #btn-delete{
+ cursor: pointer;
+}

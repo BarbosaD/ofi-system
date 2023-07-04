@@ -47,7 +47,7 @@ include 'title.php';
                         <input type="text" id="txt" placeholder="Buscar ticket..."/>
                         <img src="./imgs/lupa.png" id="lupa" alt="Buscar"/>
                     </div>
-                    <div id="new-ticket">
+                    <div id="new-ticket" onclick="openModal()">
                         <img src="./imgs/more.png" class="more" alt="Buscar" title="Criar ticket"/>
                     </div>
             </div>
@@ -61,6 +61,7 @@ include 'title.php';
                         <th>Início</th>
                         <th>Status</th>
                         <th>Placa</th>
+                        <th> # </th>
                       </tr>
                     </thead>
                     <tbody>
@@ -71,6 +72,16 @@ include 'title.php';
                         <td>04/07/2023</td>
                         <td>Finalizado</td>
                         <td>YAG FD33</td>
+                        <td>
+                          <div class="icons-action">
+                              <div id="btn-edit " onclick='openModalEdit()'>
+                                  <img src="./imgs/edit.png" class="icon-act"/>
+                              </div>
+                              <div id="btn-delete" onclick='openModalDelete()'>
+                                  <img src="./imgs/delete.png" class="icon-act"/>
+                              </div>
+                          </div>
+                        </td>
                       </tr>
                       <tr>
                         <td>002</td>
@@ -79,6 +90,16 @@ include 'title.php';
                         <td>04/07/2023</td>
                         <td>Em andamento</td>
                         <td>KXU 8D73</td>
+                        <td>
+                          <div class="icons-action">
+                              <div id="btn-edit" onclick='openModalEdit() '>
+                                  <img src="./imgs/edit.png" class="icon-act"/>
+                              </div>
+                              <div id="btn-delete" onclick='openModalDelete()'>
+                                  <img src="./imgs/delete.png" class="icon-act"/>
+                              </div>
+                          </div>
+                        </td>
                       </tr>
                       <tr>
                         <td>003</td>
@@ -87,6 +108,16 @@ include 'title.php';
                         <td>04/07/2023</td>
                         <td>Aguardando cliente</td>
                         <td>TRG 3DX3</td>
+                        <td>
+                          <div class="icons-action" >
+                              <div id="btn-edit" onclick='openModalEdit()' >
+                                  <img src="./imgs/edit.png" class="icon-act"/>
+                              </div>
+                              <div id="btn-delete" onclick='openModalDelete()'>
+                                  <img src="./imgs/delete.png" class="icon-act"/>
+                              </div>
+                          </div>
+                        </td>
                       </tr>
                     </tbody>
                   </table>   
@@ -101,10 +132,10 @@ include 'title.php';
       <div class="title-modal">
           <h4> Adicionar Nova Ordem de Serviço </h4>
       </div>
-        <img  id='x-close' class='close' src="./imgs/x.png" />
-      <form>
+        <img  onclick='closeModal()' id='x-close' class='close' src="./imgs/x.png" />
+      <form id='form'>
 
-        <input type="hidden" id="id" value='003' ><br>
+        <input type="hidden" id="id" value='004' ><br>
   
         <label for="contact">Contato:</label>
         <input type="text" id="contact" name="contact" placeholder='Selecione um Contato'><br>
@@ -113,7 +144,7 @@ include 'title.php';
         <textarea type="text" id="description" name="description" > </textarea>
   
       
-        <input type="hidden" id="inicio" name="inicio"><br>
+        <input type="hidden" id="inicio" name="inicio" value="04/07/2023" ><br>
   
         <label for="status">Status:</label>
         <select id="status" name="status">
@@ -129,6 +160,55 @@ include 'title.php';
       </form>
     </div>
   </div>
+
+  <!-- MODAL EXCLUIR CONTATO -->
+<div id="modal-delete" class="modal">
+  <div class="modal-content-dlt">
+  <img src="./imgs/delete-msg.png" class='icon-dlt' />
+  <span class='txt-dlt' > Tem certeza que deseja excluir o contato? </span>
+  <button id="dlt-yes">
+     Excluir
+  </button>
+  <button  onclick='closeModalDelete()' id="dlt-no">
+     Cancelar
+  </button>
+  </div>
+</div>
+
+<!-- MODAL EDITAR CONTATO -->
+<div id="modal-edit" class="modal">
+  <div class="modal-content">
+     <div class="title-modal">
+          <h4> Editar Ordem de Serviço </h4>
+      </div>
+      <img onclick='closeModalEdit()' id='x-close-dlt' class='close' src="./imgs/x.png" />
+
+      <form id='edit-form'>
+              <input type="hidden" id="id" value='004' ><br>
+          
+          <label for="contact">Contato:</label>
+          <input type="text" id="contact" name="contact" placeholder='Selecione um Contato'><br>
+
+          <label for="description">Descrição</label>
+          <textarea type="text" id="description" name="description" > </textarea>
+
+
+          <input type="hidden" id="inicio" name="inicio" value="4/07/2023" ><br>
+
+          <label for="status">Status:</label>
+          <select id="status" name="status">
+            <option >Em andamento</option>
+            <option >Aguardando cliente</option>
+            <option >Finalizado</option>
+          </select><br>
+
+          <label for="plate">Placa:</label>
+          <input type="text" id="plate" name="plate" placeholder='Placa de veículo'><br>
+
+          <input id='save' type="submit" value="Salvar">
+    </form>
+  </div>
+</div>
 
    <!-- FUNDO MODAL ESCURO ENQUANTO ESTIVER ABERTO -->
    <div id='modal-background'> </div> 

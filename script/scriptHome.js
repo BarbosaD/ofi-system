@@ -21,6 +21,21 @@ document.addEventListener('click', function(event) {
 
      // verifica se o elemento clicado não é a div específica
     if (info === targetElement) {
+        dropDown.style.visibility = "visible";
+    } else {
+        dropDown.style.visibility = "hidden" ;    
+    }
+    
+});
+
+//Adiciona um listener de "click" no documento como um todo, para minimizar o menu quando clicar fora da div correspodente
+document.addEventListener('click', function(event) {
+
+    
+    const targetElement = event.target // armazena o elemento clicado
+
+     // verifica se o elemento clicado não é a div específica
+    if (info === targetElement) {
         dropDown.style.visibility = "visible"
     } else {
         dropDown.style.visibility = "hidden"     

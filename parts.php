@@ -84,7 +84,11 @@
           <input type="hidden" id="id" id="id"><br>
     
           <label for="name">Nome da peça:</label>
-          <input type="text" id="name" name="name"><br>
+          <select id="name" name="name">
+            <option >Partilha freio traseiro</option>
+            <option >Radiador</option>
+            <option >Retentor de suspenção</option>
+        </select><br>
 
           <label for="amount">Quantidade:</label>
           <input type="number" id="amount" name="amount"><br>

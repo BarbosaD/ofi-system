@@ -21,23 +21,17 @@ function addRow(id, name, email, phone, cpf) {
   cpfCell.innerHTML = cpf;
   
   // Botões de ação
-  var editButton = document.createElement("button");
-  editButton.innerHTML = '<span> teste </span>'; // Ícone de editar
-  editButton.addEventListener("click", function() {
-    // Lógica para editar a linha
-    // Implemente a funcionalidade desejada aqui
-  });
+  var iconsActions = document.createElement("div");
+  iconsActions.innerHTML ='<div class="icons-action">' +
+                            '<div id="btn-edit">'  +
+                                '<img src="./imgs/edit.png" class="icon-act"/>' +
+                            '</div>' +
+                           '<div id="btn-delete">' +
+                              '<img src="./imgs/delete.png" class="icon-act"/>' +
+                           '</div>' +
+                          '</div>';
   
-  var deleteButton = document.createElement("button");
-  deleteButton.innerHTML = '<i class="fas fa-trash"></i>'; // Ícone de excluir
-  deleteButton.addEventListener("click", function() {
-    // Lógica para excluir a linha
-    // Implemente a funcionalidade desejada aqui
-    table.deleteRow(row.rowIndex);
-  });
-  
-  actionsCell.appendChild(editButton);
-  actionsCell.appendChild(deleteButton);
+  actionsCell.appendChild(iconsActions);
 }
 
 // Abrir o modal
@@ -93,6 +87,21 @@ info.addEventListener('click', () => {
     dropDown.style.visibility = "visible";
 })
 
+//Adiciona um listener de "click" no documento como um todo, para minimizar o menu quando clicar fora da div correspodente
+document.addEventListener('click', function(event) {
+
+    
+  const targetElement = event.target // armazena o elemento clicado
+
+   // verifica se o elemento clicado não é a div específica
+  if (info === targetElement) {
+      dropDown.style.visibility = "visible";
+  } else {
+      dropDown.style.visibility = "hidden" ;    
+  }
+  
+});
+
 
 //Evento de busca na tabela
 document.getElementById('searchContact').addEventListener('input', function() {
@@ -121,3 +130,30 @@ document.getElementById('searchContact').addEventListener('input', function() {
     rows[i].style.display = found ? '' : 'none';
   }
 });
+
+
+// Abrir o modal delete
+function openModalDelete() {
+  document.getElementById("modal-delete").style.display = "block";
+  document.getElementById("modal-background").style.display = "block";
+}
+
+
+// Fechar o modal delete
+function closeModalDelete() {
+  document.getElementById("modal-delete").style.display = "none";
+  document.getElementById("modal-background").style.display = "none";
+}
+
+
+// Abrir o modal Editar
+function openModalEdit() {
+  document.getElementById("modal-edit").style.display = "block";
+  document.getElementById("modal-background").style.display = "block";
+}
+
+// Fechar o modal Editar
+function closeModalEdit() {
+  document.getElementById("modal-edit").style.display = "none";
+  document.getElementById("modal-background").style.display = "none";
+}
