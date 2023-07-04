@@ -42,3 +42,18 @@ cells.forEach(cell => {
     cell.classList.add('finalizado');
   }
 });
+
+//Código destinado a exibir e ocultar o menu drop down:
+
+//Seleciona a div correspodente que irá "receber" a ação do click, e mostrar o menu
+const info = document.getElementById('arrow');
+
+//Seleciona o menu drop down
+const dropDown = document.getElementById('dropdown');
+
+//Adiciona um listener de "click" na nossa div escolhida
+info.addEventListener('click', () => {
+
+    //Exibe o menu
+    dropDown.style.visibility = "visible";
+})

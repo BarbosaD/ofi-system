@@ -78,6 +78,22 @@ document.getElementById("form").addEventListener("submit", function(event) {
 });
 
 
+//Código destinado a exibir e ocultar o menu drop down:
+
+//Seleciona a div correspodente que irá "receber" a ação do click, e mostrar o menu
+const info = document.getElementById('arrow');
+
+//Seleciona o menu drop down
+const dropDown = document.getElementById('dropdown');
+
+//Adiciona um listener de "click" na nossa div escolhida
+info.addEventListener('click', () => {
+
+    //Exibe o menu
+    dropDown.style.visibility = "visible";
+})
+
+
 //Evento de busca na tabela
 document.getElementById('searchContact').addEventListener('input', function() {
   var filter = this.value.toLowerCase();
