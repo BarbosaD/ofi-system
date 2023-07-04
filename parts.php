@@ -9,7 +9,7 @@
     
         
 <?php
-        $title_page = "COTAÇÃO DE PEÇAS";
+        $title_page = "Cotação de Peças";
         include 'title.php';
 ?>
     
@@ -57,13 +57,13 @@
                 <table id="table">
                     <thead>
                       <tr>
-                        <th>NOME PEÇA</th>
-                        <th>QUANTIDADE</th>
+                        <th>Nome</th>
+                        <th>Quantidade</th>
                       </tr>
                     </thead>
                     <tbody>
                       <tr>
-                        <td>BENGALA DIREITA</td>
+                        <td>Bengala Direita</td>
                         <td>1</td>                     
                       </tr>
                     </tbody>

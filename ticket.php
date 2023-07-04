@@ -9,7 +9,7 @@
         
 
 <?php
-$title_page = "ORDENS DE SERVIÇOS";
+$title_page = "Ordens de serviços";
 include 'title.php';
 ?>
 
@@ -54,7 +54,7 @@ include 'title.php';
             <div class="table-style">
                 <table id="table">
                     <thead>
-                      <tr>
+                      <tr class='headerRow'>
                         <th>Número de Ticket</th>
                         <th>Contato</th>
                         <th>Descrição</th>
@@ -67,11 +67,26 @@ include 'title.php';
                       <tr>
                         <td>001</td>
                         <td>João</td>
-                        <td>Troca de Peça</td>
-                        <td>22/04/2023</td>
+                        <td>Revisão</td>
+                        <td>04/07/2023</td>
+                        <td>Finalizado</td>
+                        <td>YAG FD33</td>
+                      </tr>
+                      <tr>
+                        <td>002</td>
+                        <td>Gabriel</td>
+                        <td>Troca de óleo - Yamalube 10w40 </td>
+                        <td>04/07/2023</td>
                         <td>Em andamento</td>
                         <td>KXU 8D73</td>
-                        
+                      </tr>
+                      <tr>
+                        <td>003</td>
+                        <td>Gabriel</td>
+                        <td> Instalação Eliminador de Rabeta </td>
+                        <td>04/07/2023</td>
+                        <td>Aguardando cliente</td>
+                        <td>TRG 3DX3</td>
                       </tr>
                     </tbody>
                   </table>   
@@ -89,13 +104,13 @@ include 'title.php';
         <img  id='x-close' class='close' src="./imgs/x.png" />
       <form>
 
-        <input type="hidden" id="id" ><br>
+        <input type="hidden" id="id" value='003' ><br>
   
         <label for="contact">Contato:</label>
         <input type="text" id="contact" name="contact" placeholder='Selecione um Contato'><br>
   
-        <label for="category">Descrição</label>
-        <textarea type="text" id="category" name="category" > </textarea>
+        <label for="description">Descrição</label>
+        <textarea type="text" id="description" name="description" > </textarea>
   
       
         <input type="hidden" id="inicio" name="inicio"><br>
@@ -103,8 +118,8 @@ include 'title.php';
         <label for="status">Status:</label>
         <select id="status" name="status">
           <option >Em andamento</option>
-          <option >Aguardando Cliente</option>
-          <option >Concluído</option>
+          <option >Aguardando cliente</option>
+          <option >Finalizado</option>
         </select><br>
   
         <label for="plate">Placa:</label>

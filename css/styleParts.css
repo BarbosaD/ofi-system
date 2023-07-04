@@ -142,15 +142,14 @@ body{
     justify-content: center;
 }
 .nav{
-    width: 7%;
-    height: 300px;
-    margin-top: 12%;
+    width: 5%;
+    height: 205px;
+    margin-top: 13%;
     position: relative;
-    right: 30px;
+    right: 40px;
     border-radius: 15px;
     box-shadow: 0px 0px 4px 1px rgb(22 50 233 / 75%);
 }
-
 .icon{
     width: 50%;
     height: 70%;
@@ -166,14 +165,14 @@ body{
     width: 300px;
     margin: auto;
     border-radius: 8px;
-    box-shadow: 1px 1px 7px rgb(9, 5, 234);
     position: relative;
-    top: 18px;
     margin: auto;
     right: 615px;
+    bottom: -60px;
 }
 
 h1{
+    font-family: math;
     margin: auto;
     font-size: 1.5em;
     color: #fff;
@@ -273,6 +272,7 @@ table {
     padding: 10px; 
     text-align: left; 
     font-size: 1.5em;
+    font-family: system-ui;
   }
 
   td{

@@ -8,7 +8,7 @@
 
         
 <?php
-        $title_page = "CONTATOS";
+        $title_page = "Contatos";
         include 'title.php';
 ?>
 
@@ -42,22 +42,23 @@
     <div class="container">
             <div class="header_container"> 
                     <div id="search">
-                        <input type="text" id="txt" placeholder="Buscar contato..."/>
+                        <input type="text" id="searchContact" placeholder="Buscar contato..."/>
                         <img src="./imgs/lupa.png" id="lupa" alt="Buscar"/>
                     </div>
-                    <div id="new-ticket">
+                    <div id="new-ticket" onclick="openModal()" >
                         <img src="./imgs/more.png" class="more" alt="Buscar" title="Criar ticket"/>
-            </div>
+                     </div>
             </div>
             <div class="table-style">
                 <table id="table">
                     <thead>
-                      <tr>
+                      <tr class='headerRow'>
                         <th>ID</th>
                         <th>Nome</th>
                         <th>Telefone</th>
                         <th>E-mail</th>
                         <th>CPF</th>
+                        <th>#</th>
                       </tr>
                     </thead>
                     <tbody>
@@ -67,7 +68,20 @@
                         <td>99744460</td>
                         <td>gbsilvaps@hotmail.com</td>
                         <td>01716188732</td>
-                      
+                      </tr>
+                      <tr>
+                        <td>002</td>
+                        <td>Kairos</td>
+                        <td>997432160</td>
+                        <td>kairin@hotmail.com</td>
+                        <td>13016188732</td>
+                      </tr>
+                      <tr>
+                        <td>003</td>
+                        <td>João Vitor</td>
+                        <td>998561800</td>
+                        <td>jp@hotmail.com</td>
+                        <td>19082796324</td>
                       </tr>
                     </tbody>
                   </table>   
@@ -81,23 +95,23 @@
      <div class="title-modal">
           <h4> Adicionar Contato </h4>
       </div>
-      <img  id='x-close' class='close' src="./imgs/x.png" />
+      <img onclick='closeModal()' id='x-close' class='close' src="./imgs/x.png" />
 
-      <form>
+      <form id='form'>
       <label for="id"></label>
-      <input type="hidden" id="id"><br>
+      <input type="hidden" id="id" value='004'><br>
 
       <label for="name">Nome:</label>
       <input type="text" id="name" name="name"><br>
 
-      <label for="number">Número (Tel):</label>
-      <input type="text" id="number" name="number" placeholder='Ex: 27997444460'><br>
+      <label for="phone">Número (Tel):</label>
+      <input type="text" id="phone" name="phone" placeholder='Ex: 27997444460'><br>
 
       <label for="email">E-mail:</label>
       <input type="text" id="email" name="email" placeholder='gbsilvaps@hotmail.com'> <br>
 
       <label for="cpf">CPF:</label>
-      <input type="tel" id="cpf" name="cpf"><br>
+      <input type="text" id="cpf" name="cpf"><br>
       <input id='save' type="submit" value="Salvar">
     </form>
   </div>
